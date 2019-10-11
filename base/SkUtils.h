@@ -1,6 +1,6 @@
 ﻿#include "PxPhysicsAPI.h"
 #include "string"
-
+#include <stdexcept>
 class SkErrorCallback : public physx::PxErrorCallback
 {
 public:
@@ -47,3 +47,4 @@ public:
         fprintf(stderr,"DEBUG %s in %s,%d: %s...\n",type.c_str(),file,line,message);
     }
 };
+#define Error(str) { throw new std::runtime_error(str);}

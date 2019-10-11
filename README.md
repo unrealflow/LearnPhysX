@@ -1,6 +1,7 @@
 # LearnPhysX
 
 ## Requirements:
+* PhysX SDK
 * bin\glut32.dll
 * bin\PhysX_64.dll
 * bin\PhysXCommon_64.dll
